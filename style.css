@@ -1,0 +1,358 @@
+/*
+CSS Library References:
+- Bootstrap v5.3.3 (CDN: https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css)
+- Font Awesome v6.5.1 (CDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css)
+*/
+
+:root {
+            --pce-primary: #1a237e;
+            --pce-secondary: #0d47a1;
+            --accent-warning: #ffc107;
+            --text-main: #0a0e12;
+            --text-muted: #6c757d;
+            --bg-light: #f8f9fa;
+            --bg-white: #ffffff;
+            --transition-speed: 0.3s;
+            --section-padding: 5rem 0;
+            --border-radius: 0.5rem;
+            --shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+            --shadow-md: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+/* Base Styles */
+html {
+            scroll-behavior: smooth;
+}
+
+body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+}
+
+/* Header & Navigation */
+.header-main {
+            position: sticky;
+            top: 0;
+            z-index: 1030;
+}
+
+.navbar {
+            background-color: var(--pce-primary) !important;
+            transition: background-color var(--transition-speed) ease;
+}
+
+.navbar-brand span {
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+}
+
+.nav-link {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: color var(--transition-speed) ease;
+}
+
+.nav-link:hover {
+            color: var(--accent-warning) !important;
+}
+
+.navbar-toggler {
+            border: none;
+}
+
+.navbar-toggler:focus {
+            box-shadow: none;
+}
+
+/* Hero Section */
+.hero-section {
+            background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(13, 71, 161, 0.85)), url('https://picsum.photos/1920/1080?grayscale&blur=2') no-repeat center center;
+            background-size: cover;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            color: var(--bg-white);
+            padding: var(--section-padding);
+}
+
+.hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+}
+
+/* Report Content Sections */
+.section-title {
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+            color: var(--pce-primary);
+}
+
+.section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-warning);
+}
+
+/* Profiles Section */
+.profile-card {
+            border: none;
+            border-radius: var(--border-radius);
+            transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+            overflow: hidden;
+}
+
+.profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-md);
+}
+
+.profile-avatar {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid var(--bg-light);
+            margin-bottom: 1.5rem;
+}
+
+/* HVDC Process & Diagrams */
+.process-step-box {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-left: 4px solid var(--pce-primary);
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-sm);
+}
+
+.diagram-container {
+            background: #fff;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+}
+
+.diagram-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+}
+
+.thyristor-specs-list {
+            list-style: none;
+            padding-left: 0;
+}
+
+.thyristor-specs-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--bg-light);
+            display: flex;
+            justify-content: space-between;
+}
+
+/* Technical Ratings Tables */
+.table-ratings {
+            margin-top: 2rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+}
+
+.table-ratings thead {
+            background-color: var(--pce-primary);
+            color: var(--bg-white);
+}
+
+.table-ratings tbody tr:nth-of-type(odd) {
+            background-color: rgb(236, 236, 236);
+}
+
+/* Report Page Simulation */
+.report-page-break {
+            border-top: 2px dashed var(--border-color);
+            margin: 4rem 0;
+            position: relative;
+}
+
+.report-page-break::before {
+            content: 'End of Page';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-white);
+            padding: 0 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+}
+
+/* Footer */
+.footer-main {
+            background-color: var(--pce-primary);
+            color: var(--bg-white);
+            padding: 4rem 0 2rem;
+}
+
+.footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color var(--transition-speed) ease;
+}
+
+.footer-link:hover {
+            color: var(--accent-warning);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+            .hero-section {
+                        padding: 3rem 0;
+                        text-align: center;
+            }
+
+            .navbar-collapse {
+                        background: var(--pce-primary);
+                        padding: 1rem;
+                        border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-link {
+                        padding: 0.75rem 0;
+            }
+
+            .section-title {
+                        text-align: center;
+            }
+
+            .section-title::after {
+                        left: 50%;
+                        transform: translateX(-50%);
+            }
+}
+
+@media (max-width: 767.98px) {
+            :root {
+                        --section-padding: 3rem 0;
+            }
+
+            .hero-title {
+                        font-size: 2rem;
+            }
+
+            .profile-avatar {
+                        width: 120px;
+                        height: 120px;
+            }
+}
+
+/* Utility Classes */
+.bg-pce-blue {
+            background-color: var(--pce-primary);
+}
+
+.text-pce-blue {
+            color: var(--pce-primary);
+}
+
+.badge-rating {
+            background-color: var(--accent-warning);
+            color: var(--pce-primary);
+            font-weight: 700;
+}
+
+.info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+}
+
+/* Accessibility & Focus States */
+.btn:focus,
+.nav-link:focus {
+            outline: 2px solid var(--accent-warning);
+            outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+            width: 10px;
+}
+
+::-webkit-scrollbar-track {
+            background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+            background: var(--pce-primary);
+            border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+            background: var(--pce-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+            padding: 100px 0;
+            min-height: 100vh;
+            background-image: url(/assets/images/grid.png);
+            background-size: contain;
+}
+
+.contact-form {
+            padding: 35px;
+            border-radius: 15px;
+            background-color: transparent;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+            -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
+}
+
+.contact-form .form-control {
+            padding: 0.775rem 1.05rem;
+            background-color: transparent;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+}
+
+.contact-form .form-control:focus {
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            border-color: #850dd5;
+}
+
+.contact-form .btn {
+            background-color: #850dd5;
+}
