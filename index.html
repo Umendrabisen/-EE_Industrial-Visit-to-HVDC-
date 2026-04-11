@@ -1,507 +1,622 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<html lang="en">
 
-<header class="header-main">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
-                        <div class="container">
-                                    <a class="navbar-brand d-flex align-items-center" href="#top">
-                                                <i class="fas fa-bolt text-warning me-2"></i>
-                                                <span class="fw-bold">PCE Nagpur | Electrical Dept.</span>
-                                    </a>
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#reportNavbar" aria-controls="reportNavbar"
-                                                aria-expanded="false" aria-label="Toggle navigation">
-                                                <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                    <div class="collapse navbar-collapse" id="reportNavbar">
-                                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                                            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
-                                                                                    href="#introduction">Overview</a>
-                                                            </li>
-                                                            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
-                                                                                    href="#profiles">Profiles</a></li>
-                                                            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
-                                                                                    href="#hvdc-process">HVDC
-                                                                                    Process</a></li>
-                                                            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
-                                                                                    href="#thyristor-valves">Thyristor
-                                                                                    Hall</a></li>
-                                                            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
-                                                                                    href="#ratings">Technical
-                                                                                    Ratings</a></li>
-                                                            <li class="nav-item"><a class="nav-link btn btn-warning text-dark fw-bold ms-lg-3 px-4"
-                                                                                    href="https://drive.google.com/file/d/1AuBoWLNGAElK8oGs2UBlQ3KUPwq0-WpE/view?usp=drivesdk">Download
-                                                                                    Report</a>
-                                                            </li>
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+</head>
+
+<body>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+            <header class="header-main">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm py-3">
+                                    <div class="container">
+                                                <a class="navbar-brand d-flex align-items-center" href="#top">
+                                                            <i class="fas fa-bolt text-warning me-2"></i>
+                                                            <span class="fw-bold">PCE Nagpur | Electrical Dept.</span>
+                                                </a>
+                                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#reportNavbar" aria-controls="reportNavbar"
+                                                            aria-expanded="false" aria-label="Toggle navigation">
+                                                            <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                                <div class="collapse navbar-collapse" id="reportNavbar">
+                                                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                                        <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
+                                                                                                href="#introduction">Overview</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
+                                                                                                href="#profiles">Profiles</a>
+                                                                        </li>
+                                                                        <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
+                                                                                                href="#hvdc-process">HVDC
+                                                                                                Process</a></li>
+                                                                        <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
+                                                                                                href="#thyristor-valves">Thyristor
+                                                                                                Hall</a></li>
+                                                                        <li class="nav-item"><a class="nav-link text-uppercase fw-semibold px-3"
+                                                                                                href="#ratings">Technical
+                                                                                                Ratings</a></li>
+                                                                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark fw-bold ms-lg-3 px-4"
+                                                                                                href="https://drive.google.com/file/d/1AuBoWLNGAElK8oGs2UBlQ3KUPwq0-WpE/view?usp=drivesdk">Download
+                                                                                                Report</a>
+                                                                        </li>
 
 
-                                                            <!-- <li class="nav-item mr-5">
+                                                                        <!-- <li class="nav-item mr-5">
                                                                         <a class="nav-link hd-txt"
                                                                                     href="https://drive.google.com/file/d/1AuBoWLNGAElK8oGs2UBlQ3KUPwq0-WpE/view?usp=drivesdk"
                                                                                     target="_blank">Download
                                                                                     Report</a> -->
+                                                                        </li>
+                                                            </ul>
+                                                </div>
+                                    </div>
+                        </nav>
+            </header>
+
+            <main>
+                        <!-- Hero Section / Cover Page -->
+                        <section id="top" class="hero-section py-5 bg-light border-bottom">
+                                    <div class="container py-5">
+                                                <div class="row align-items-center">
+                                                            <div class="col-lg-8">
+                                                                        <h6
+                                                                                    class="text-primary fw-bold text-uppercase ls-wide">
+                                                                                    Technical Visit Report 2026</h6>
+                                                                        <h1 class="display-3 fw-bold mb-4">Industrial
+                                                                                    Visit to HVDC
+                                                                                    Section: CTPS Chandrapur</h1>
+                                                                        <p class="lead text-muted mb-5">A comprehensive
+                                                                                    technical
+                                                                                    study of the ±500kV HVDC Bi-pole
+                                                                                    terminal at
+                                                                                    Chandrapur Thermal Power Station
+                                                                                    conducted by
+                                                                                    the Department of Electrical
+                                                                                    Engineering,
+                                                                                    Priyadarshini College of
+                                                                                    Engineering, Nagpur.
+                                                                        </p>
+                                                                        <div class="d-flex gap-3">
+                                                                                    <div
+                                                                                                class="badge bg-dark p-3 text-start">
+                                                                                                <small
+                                                                                                            class="d-block opacity-75">Date
+                                                                                                            of
+                                                                                                            Visit</small>
+                                                                                                <span class="fs-6">April
+                                                                                                            10,
+                                                                                                            2026</span>
+                                                                                    </div>
+                                                                                    <div
+                                                                                                class="badge bg-primary p-3 text-start">
+                                                                                                <small
+                                                                                                            class="d-block opacity-75">Location</small>
+                                                                                                <span class="fs-6">Chandrapur,
+                                                                                                            MH</span>
+                                                                                    </div>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-lg-4 d-none d-lg-block">
+                                                                        <img src="coll.png"
+                                                                                    alt="CTPS Main Power Plant View"
+                                                                                    class="img-fluid rounded-4 shadow-lg">
+                                                            </div>
+                                                </div>
+                                    </div>
+                        </section>
+
+                        <!-- HOD & Faculty Profile Section -->
+                        <section id="profiles" class="py-5">
+                                    <div class="container">
+                                                <div class="text-center mb-5">
+                                                            <h2 class="fw-bold">Academic Leadership</h2>
+                                                            <hr class="mx-auto w-25 border-primary border-3">
+                                                </div>
+                                                <div class="row g-4 justify-content-center">
+                                                            <div class="col-md-5">
+                                                                        <div
+                                                                                    class="card h-100 border-0 shadow-sm text-center p-4">
+                                                                                    <img src="colle.png"
+                                                                                                class="rounded-circle mx-auto mb-3 shadow"
+                                                                                                width="120" height="120"
+                                                                                                alt="HOD Profile">
+                                                                                    <h4 class="mb-1">Dr. R.A. Keswani
+                                                                                    </h4>
+                                                                                    <p class="text-primary fw-bold">Head
+                                                                                                of
+                                                                                                Department (Electrical
+                                                                                                Engg.)</p>
+                                                                                    <p class="text-muted px-3">
+                                                                                                Overseeing the
+                                                                                                academic integration of
+                                                                                                industrial
+                                                                                                exposure into the
+                                                                                                curriculum for the
+                                                                                                2026 batch.</p>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                                        <div class="card h-100 border-0 shadow-sm p-4">
+                                                                                    <h4 class="border-bottom pb-2 mb-3">
+                                                                                                Visit
+                                                                                                Coordination Team</h4>
+                                                                                    <div class="table-responsive">
+                                                                                                <table
+                                                                                                            class="table table-borderless align-middle">
+                                                                                                            <thead>
+                                                                                                                        <tr>
+                                                                                                                                    <th>Designation
+                                                                                                                                    </th>
+                                                                                                                                    <th>Faculty Name
+                                                                                                                                    </th>
+                                                                                                                                    <th>Role
+                                                                                                                                    </th>
+                                                                                                                        </tr>
+                                                                                                            </thead>
+                                                                                                            <tbody>
+                                                                                                                        <tr>
+                                                                                                                                    <td>Asst. Professor
+                                                                                                                                    </td>
+                                                                                                                                    <td>Prof . L .
+                                                                                                                                                M
+                                                                                                                                                .
+                                                                                                                                                Bopche
+                                                                                                                                    </td>
+                                                                                                                                    <td>Technical
+                                                                                                                                                Lead
+                                                                                                                                    </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                                    <td>Professor
+                                                                                                                                    </td>
+                                                                                                                                    <td>Prof . A .
+                                                                                                                                                Wankhede
+                                                                                                                                    </td>
+                                                                                                                                    <td>Technical
+                                                                                                                                                Lead
+                                                                                                                                    </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                                    <td>Professor
+                                                                                                                                    </td>
+                                                                                                                                    <td>Prof. K .
+                                                                                                                                                Gaurkhede
+                                                                                                                                    </td>
+                                                                                                                                    <td>Technical
+                                                                                                                                                Lead
+                                                                                                                                    </td>
+                                                                                                                        </tr>
+                                                                                                                        <tr>
+                                                                                                                                    <td>Student Representative
+                                                                                                                                    </td>
+                                                                                                                                    <td>Mr . Om Jakkulwar
+                                                                                                                                    </td>
+                                                                                                                                    <td>Final Year
+                                                                                                                                                Lead
+                                                                                                                                    </td>
+                                                                                                                        </tr>
+                                                                                                            </tbody>
+                                                                                                </table>
+                                                                                    </div>
+                                                                        </div>
+                                                            </div>
+                                                </div>
+                                    </div>
+                        </section>
+
+                        <!-- Page 1-2: Introduction and Site Context -->
+                        <section id="introduction" class="py-5 bg-light">
+                                    <div class="container">
+                                                <div class="row g-5">
+                                                            <div class="col-lg-6">
+                                                                        <h2 class="fw-bold mb-4">1. Introduction to CTPS
+                                                                                    HVDC</h2>
+                                                                        <p>The Chandrapur Thermal Power Station (CTPS)
+                                                                                    is one of
+                                                                                    India's premier energy generation
+                                                                                    hubs. The HVDC
+                                                                                    (High Voltage Direct Current)
+                                                                                    section at
+                                                                                    Chandrapur is a critical terminal of
+                                                                                    the 1500 MW
+                                                                                    Chandrapur-Padghe link. This visit
+                                                                                    focused on
+                                                                                    the transition from AC generation to
+                                                                                    long-distance DC transmission.</p>
+                                                                        <p>The HVDC technology used here enables bulk
+                                                                                    power
+                                                                                    transmission over 736 km with
+                                                                                    significantly
+                                                                                    lower losses compared to
+                                                                                    conventional HVAC
+                                                                                    systems. As of 2026, the station
+                                                                                    utilizes
+                                                                                    advanced monitoring systems and
+                                                                                    upgraded cooling
+                                                                                    mechanisms to handle peak
+                                                                                    loads.Chandrapur
+                                                                                    Thermal Power Station (CTPS) is one
+                                                                                    of the
+                                                                                    largest and most important
+                                                                                    coal-based
+                                                                                    power generating stations in
+                                                                                    Maharashtra,
+                                                                                    operated by Maharashtra State Power
+                                                                                    Generation
+                                                                                    Company Limited (MAHAGENCO). It is
+                                                                                    strategically
+                                                                                    located near Chandrapur city due to
+                                                                                    the
+                                                                                    availability of coal resources and
+                                                                                    water supply,
+                                                                                    making it an ideal site for
+                                                                                    large-scale thermal
+                                                                                    power generation. As of 2026, the
+                                                                                    total
+                                                                                    installed capacity of CTPS is
+                                                                                    approximately 2920
+                                                                                    MW,
+                                                                                    generated through multiple units of
+                                                                                    varying
+                                                                                    capacities operating under high
+                                                                                    efficiency
+                                                                                    conditions.
+                                                                                    The plant uses coal as the primary
+                                                                                    fuel, which
+                                                                                    is sourced from nearby coal mines,
+                                                                                    ensuring a
+                                                                                    continuous and economical fuel
+                                                                                    supply. CTPS is
+                                                                                    equipped with modern boilers,
+                                                                                    turbines, and
+                                                                                    generators designed to operate at
+                                                                                    high pressure
+                                                                                    and temperature, improving overall
+                                                                                    plant
+                                                                                    efficiency. The electricity
+                                                                                    generated is
+                                                                                    transmitted through a robust
+                                                                                    transmission
+                                                                                    network
+                                                                                    operating at 220 kV and 400 kV
+                                                                                    voltage levels,
+                                                                                    ensuring reliable power delivery
+                                                                                    across
+                                                                                    Maharashtra</p>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                        <img src="hvdcc.png"
+                                                                                    alt="HVDC Switchyard Overview"
+                                                                                    class="img-fluid rounded shadow">
+                                                            </div>
+                                                </div>
+                                    </div>
+                        </section>
+
+                        <!-- Page 3-4: The HVDC Process Flow -->
+                        <section id="hvdc-process" class="py-5">
+                                    <div class="container">
+                                                <h2 class="fw-bold text-center mb-5">2. Technical Process Workflow</h2>
+                                                <div class="row g-4">
+                                                            <div class="col-md-3">
+                                                                        <div
+                                                                                    class="text-center p-3 border rounded h-100">
+                                                                                    <i
+                                                                                                class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                                                                                    <h5>AC Input</h5>
+                                                                                    <p class="small">400kV AC incoming
+                                                                                                from CTPS
+                                                                                                generators into the
+                                                                                                converter
+                                                                                                transformer yard.</p>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                        <div
+                                                                                    class="text-center p-3 border rounded h-100">
+                                                                                    <i
+                                                                                                class="fas fa-exchange-alt fa-3x text-primary mb-3"></i>
+                                                                                    <h5>Rectification</h5>
+                                                                                    <p class="small">Thyristor valves
+                                                                                                convert AC to
+                                                                                                ±500kV DC in a
+                                                                                                controlled
+                                                                                                environment.</p>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                        <div
+                                                                                    class="text-center p-3 border rounded h-100">
+                                                                                    <i
+                                                                                                class="fas fa-wave-square fa-3x text-primary mb-3"></i>
+                                                                                    <h5>Filtration</h5>
+                                                                                    <p class="small">AC and DC filters
+                                                                                                remove
+                                                                                                harmonics and ensure
+                                                                                                smooth wave
+                                                                                                profiles.</p>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                        <div
+                                                                                    class="text-center p-3 border rounded h-100">
+                                                                                    <i
+                                                                                                class="fas fa-long-arrow-alt-right fa-3x text-primary mb-3"></i>
+                                                                                    <h5>Transmission</h5>
+                                                                                    <p class="small">Bulk DC power sent
+                                                                                                to Padghe
+                                                                                                terminal via bipolar
+                                                                                                transmission
+                                                                                                lines.</p>
+                                                                        </div>
+                                                            </div>
+                                                </div>
+                                    </div>
+                        </section>
+
+                        <!-- Page 5-6: Thyristor Valves Detailed Section -->
+                        <!-- <section "style=" background-color: white;"" id="thyristor-valves" class="py-5 bg-dark text-white"> -->
+
+
+
+
+                        <section id="thyristor-valves" style="background-color: white;" class="py-5 bg-dark text-white">
+                        </section>
+                        <div class="container">
+                                    <div class="row align-items-4">3. Detailed Thyristor Valve Analysis</h2>
+                                                <p>The "Valve Hall" is the heart of the HVDC system. We observed the
+                                                            massive Thyristor quadrivalve structures suspended from the
+                                                            ceiling to ensure seismic stability and electrical
+                                                            insulation.</p>
+                                                <ul class="list-unstyled">
+                                                            <li class="mb-3"><i
+                                                                                    class="fas fa-check-circle text-warning me-2"></i>
+                                                                        <strong>Valve Composition:</strong> Each valve
+                                                                        contains multiple series-connected thyristor
+                                                                        levels.
+                                                            </li>
+                                                            <li class="mb-3"><i
+                                                                                    class="fas fa-check-circle text-warning me-2"></i>
+                                                                        <strong>Triggering:</strong> Fiber-optic cables
+                                                                        are used for light-triggered thyristors (LTT) to
+                                                                        ensure isolation from high voltage.
+                                                            </li>
+                                                            <li class="mb-3"><i
+                                                                                    class="fas fa-check-circle text-warning me-2"></i>
+                                                                        <strong>Cooling:</strong> De-ionized water
+                                                                        cooling systems circulate through the heatsinks
+                                                                        at the thyristor level.
                                                             </li>
                                                 </ul>
                                     </div>
-                        </div>
-            </nav>
-</header>
+                                    <div class="col-lg-6">
+                                                <!-- <div class="card bg-secondary text-white border-0"> -->
 
-<main>
-            <!-- Hero Section / Cover Page -->
-            <section id="top" class="hero-section py-5 bg-light border-bottom">
-                        <div class="container py-5">
-                                    <div class="row align-items-center">
-                                                <div class="col-lg-8">
-                                                            <h6 class="text-primary fw-bold text-uppercase ls-wide">
-                                                                        Technical Visit Report 2026</h6>
-                                                            <h1 class="display-3 fw-bold mb-4">Industrial Visit to HVDC
-                                                                        Section: CTPS Chandrapur</h1>
-                                                            <p class="lead text-muted mb-5">A comprehensive technical
-                                                                        study of the ±500kV HVDC Bi-pole terminal at
-                                                                        Chandrapur Thermal Power Station conducted by
-                                                                        the Department of Electrical Engineering,
-                                                                        Priyadarshini College of Engineering, Nagpur.
-                                                            </p>
-                                                            <div class="d-flex gap-3">
-                                                                        <div class="badge bg-dark p-3 text-start">
-                                                                                    <small class="d-block opacity-75">Date
-                                                                                                of Visit</small>
-                                                                                    <span class="fs-6">April 10,
-                                                                                                2026</span>
-                                                                        </div>
-                                                                        <div class="badge bg-primary p-3 text-start">
-                                                                                    <small
-                                                                                                class="d-block opacity-75">Location</small>
-                                                                                    <span class="fs-6">Chandrapur,
-                                                                                                MH</span>
-                                                                        </div>
-                                                            </div>
-                                                </div>
-                                                <div class="col-lg-4 d-none d-lg-block">
-                                                            <img src="coll.png" alt="CTPS Main Power Plant View"
-                                                                        class="img-fluid rounded-4 shadow-lg">
-                                                </div>
+                                                <!-- <div class="card-body"> -->
+                                                <!-- <p class="card-text small fw-light"> -->
+                                                </p>
                                     </div>
                         </div>
-            </section>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
 
-            <!-- HOD & Faculty Profile Section -->
-            <section id="profiles" class="py-5">
-                        <div class="container">
-                                    <div class="text-center mb-5">
-                                                <h2 class="fw-bold">Academic Leadership</h2>
-                                                <hr class="mx-auto w-25 border-primary border-3">
-                                    </div>
-                                    <div class="row g-4 justify-content-center">
-                                                <div class="col-md-5">
-                                                            <div class="card h-100 border-0 shadow-sm text-center p-4">
-                                                                        <img src="colle.png"
-                                                                                    class="rounded-circle mx-auto mb-3 shadow"
-                                                                                    width="120" height="120"
-                                                                                    alt="HOD Profile">
-                                                                        <h4 class="mb-1">Dr. R.A. Keswani</h4>
-                                                                        <p class="text-primary fw-bold">Head of
-                                                                                    Department (Electrical Engg.)</p>
-                                                                        <p class="text-muted px-3">Overseeing the
-                                                                                    academic integration of industrial
-                                                                                    exposure into the curriculum for the
-                                                                                    2026 batch.</p>
-                                                            </div>
+                        <!-- Page 7-8: Component Ratings Table -->
+                        <section id="ratings" class="py-5">
+                                    <div class="container">
+                                                <h2 class="fw-bold mb-4">4. System Component Ratings (Standard 2026
+                                                            Data)</h2>
+                                                <div class="table-responsive">
+                                                            <table class="table table-striped table-hover border">
+                                                                        <thead class="table-primary">
+                                                                                    <tr>
+                                                                                                <th>Component Name</th>
+                                                                                                <th>Description</th>
+                                                                                                <th>Operational Rating
+                                                                                                </th>
+                                                                                    </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                                    <tr>
+                                                                                                <td>Converter
+                                                                                                            Transformer
+                                                                                                </td>
+                                                                                                <td>Single-phase,
+                                                                                                            3-winding
+                                                                                                            units
+                                                                                                </td>
+                                                                                                <td>600 MVA, 400kV /
+                                                                                                            210kV</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                                <td>Thyristor Valves
+                                                                                                </td>
+                                                                                                <td>Water-cooled, LTT
+                                                                                                            Type</td>
+                                                                                                <td>±500 kV, 1500 Amps
+                                                                                                            DC</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                                <td>Smoothing Reactor
+                                                                                                </td>
+                                                                                                <td>Air-core, Dry-type
+                                                                                                </td>
+                                                                                                <td>250 mH, 1500 Amps
+                                                                                                </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                                <td>AC Filters</td>
+                                                                                                <td>High-pass &
+                                                                                                            Double-tuned
+                                                                                                </td>
+                                                                                                <td>12th, 24th, 36th
+                                                                                                            Harmonics
+                                                                                                </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                                <td>DC Filters</td>
+                                                                                                <td>Harmonic suppression
+                                                                                                </td>
+                                                                                                <td>±500 kV DC, PLC
+                                                                                                            Filters</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                                <td>Cooling System</td>
+                                                                                                <td>Closed-loop water
+                                                                                                            cooling</td>
+                                                                                                <td>Conductivity &lt;
+                                                                                                            0.5 µS/cm
+                                                                                                </td>
+                                                                                    </tr>
+                                                                        </tbody>
+                                                            </table>
                                                 </div>
-                                                <div class="col-md-7">
-                                                            <div class="card h-100 border-0 shadow-sm p-4">
-                                                                        <h4 class="border-bottom pb-2 mb-3">Visit
-                                                                                    Coordination Team</h4>
-                                                                        <div class="table-responsive">
-                                                                                    <table
-                                                                                                class="table table-borderless align-middle">
-                                                                                                <thead>
-                                                                                                            <tr>
-                                                                                                                        <th>Designation
-                                                                                                                        </th>
-                                                                                                                        <th>Faculty Name
-                                                                                                                        </th>
-                                                                                                                        <th>Role
-                                                                                                                        </th>
-                                                                                                            </tr>
-                                                                                                </thead>
-                                                                                                <tbody>
-                                                                                                            <tr>
-                                                                                                                        <td>Asst. Professor
-                                                                                                                        </td>
-                                                                                                                        <td>Prof . L .
-                                                                                                                                    M
-                                                                                                                                    .
-                                                                                                                                    Bopche
-                                                                                                                        </td>
-                                                                                                                        <td>Technical
-                                                                                                                                    Lead
-                                                                                                                        </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                        <td>Professor
-                                                                                                                        </td>
-                                                                                                                        <td>Prof . A .
-                                                                                                                                    Wankhede
-                                                                                                                        </td>
-                                                                                                                        <td>Technical
-                                                                                                                                    Lead
-                                                                                                                        </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                        <td>Professor
-                                                                                                                        </td>
-                                                                                                                        <td>Prof. K .
-                                                                                                                                    Gaurkhede
-                                                                                                                        </td>
-                                                                                                                        <td>Technical
-                                                                                                                                    Lead
-                                                                                                                        </td>
-                                                                                                            </tr>
-                                                                                                            <tr>
-                                                                                                                        <td>Student Representative
-                                                                                                                        </td>
-                                                                                                                        <td>Mr . Om Jakkulwar
-                                                                                                                        </td>
-                                                                                                                        <td>Final Year
-                                                                                                                                    Lead
-                                                                                                                        </td>
-                                                                                                            </tr>
-                                                                                                </tbody>
-                                                                                    </table>
+                                    </div>
+                        </section>
+
+                        <!-- Page 9: Student Observations -->
+                        <section class="py-5 bg-light">
+                                    <div class="container">
+                                                <h2 class="fw-bold mb-4">5. On-Site Observations & Methodology</h2>
+                                                <div class="row">
+                                                            <div class="col-md-6 mb-4">
+                                                                        <div class="p-4 bg-white shadow-sm rounded">
+                                                                                    <h5>Control Room Procedures</h5>
+                                                                                    <p>The students witnessed the
+                                                                                                SCADA-based
+                                                                                                control of active and
+                                                                                                reactive
+                                                                                                power. The interface
+                                                                                                shows real-time
+                                                                                                temperature of thyristor
+                                                                                                valves and
+                                                                                                the status of DC circuit
+                                                                                                breakers.
+                                                                                    </p>
+                                                                        </div>
+                                                            </div>
+                                                            <div class="col-md-6 mb-4">
+                                                                        <div class="p-4 bg-white shadow-sm rounded">
+                                                                                    <h5>Maintenance Protocol</h5>
+                                                                                    <p>Inspection of the surge arresters
+                                                                                                and the
+                                                                                                grounding electrodes.
+                                                                                                Discussion on
+                                                                                                the importance of the
+                                                                                                metallic
+                                                                                                return and earth return
+                                                                                                modes during
+                                                                                                maintenance of one pole.
+                                                                                    </p>
                                                                         </div>
                                                             </div>
                                                 </div>
                                     </div>
-                        </div>
-            </section>
+                        </section>
 
-            <!-- Page 1-2: Introduction and Site Context -->
-            <section id="introduction" class="py-5 bg-light">
-                        <div class="container">
-                                    <div class="row g-5">
-                                                <div class="col-lg-6">
-                                                            <h2 class="fw-bold mb-4">1. Introduction to CTPS HVDC</h2>
-                                                            <p>The Chandrapur Thermal Power Station (CTPS) is one of
-                                                                        India's premier energy generation hubs. The HVDC
-                                                                        (High Voltage Direct Current) section at
-                                                                        Chandrapur is a critical terminal of the 1500 MW
-                                                                        Chandrapur-Padghe link. This visit focused on
-                                                                        the transition from AC generation to
-                                                                        long-distance DC transmission.</p>
-                                                            <p>The HVDC technology used here enables bulk power
-                                                                        transmission over 736 km with significantly
-                                                                        lower losses compared to conventional HVAC
-                                                                        systems. As of 2026, the station utilizes
-                                                                        advanced monitoring systems and upgraded cooling
-                                                                        mechanisms to handle peak loads.Chandrapur
-                                                                        Thermal Power Station (CTPS) is one of the
-                                                                        largest and most important coal-based
-                                                                        power generating stations in Maharashtra,
-                                                                        operated by Maharashtra State Power Generation
-                                                                        Company Limited (MAHAGENCO). It is strategically
-                                                                        located near Chandrapur city due to the
-                                                                        availability of coal resources and water supply,
-                                                                        making it an ideal site for large-scale thermal
-                                                                        power generation. As of 2026, the total
-                                                                        installed capacity of CTPS is approximately 2920
-                                                                        MW,
-                                                                        generated through multiple units of varying
-                                                                        capacities operating under high efficiency
-                                                                        conditions.
-                                                                        The plant uses coal as the primary fuel, which
-                                                                        is sourced from nearby coal mines, ensuring a
-                                                                        continuous and economical fuel supply. CTPS is
-                                                                        equipped with modern boilers, turbines, and
-                                                                        generators designed to operate at high pressure
-                                                                        and temperature, improving overall plant
-                                                                        efficiency. The electricity generated is
-                                                                        transmitted through a robust transmission
-                                                                        network
-                                                                        operating at 220 kV and 400 kV voltage levels,
-                                                                        ensuring reliable power delivery across
-                                                                        Maharashtra</p>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                            <img src="hvdcc.png" alt="HVDC Switchyard Overview"
-                                                                        class="img-fluid rounded shadow">
-                                                </div>
-                                    </div>
-                        </div>
-            </section>
-
-            <!-- Page 3-4: The HVDC Process Flow -->
-            <section id="hvdc-process" class="py-5">
-                        <div class="container">
-                                    <h2 class="fw-bold text-center mb-5">2. Technical Process Workflow</h2>
-                                    <div class="row g-4">
-                                                <div class="col-md-3">
-                                                            <div class="text-center p-3 border rounded h-100">
-                                                                        <i
-                                                                                    class="fas fa-bolt fa-3x text-primary mb-3"></i>
-                                                                        <h5>AC Input</h5>
-                                                                        <p class="small">400kV AC incoming from CTPS
-                                                                                    generators into the converter
-                                                                                    transformer yard.</p>
+                        <!-- Gallery Section -->
+                        <section class="py-5">
+                                    <div class="container">
+                                                <h2 class="fw-bold mb-4">Visit Documentation Gallery</h2>
+                                                <div class="row g-3">
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis222.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
                                                             </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                            <div class="text-center p-3 border rounded h-100">
-                                                                        <i
-                                                                                    class="fas fa-exchange-alt fa-3x text-primary mb-3"></i>
-                                                                        <h5>Rectification</h5>
-                                                                        <p class="small">Thyristor valves convert AC to
-                                                                                    ±500kV DC in a controlled
-                                                                                    environment.</p>
+
+
+
+
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis11.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
                                                             </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                            <div class="text-center p-3 border rounded h-100">
-                                                                        <i
-                                                                                    class="fas fa-wave-square fa-3x text-primary mb-3"></i>
-                                                                        <h5>Filtration</h5>
-                                                                        <p class="small">AC and DC filters remove
-                                                                                    harmonics and ensure smooth wave
-                                                                                    profiles.</p>
+
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis33.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
                                                             </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                            <div class="text-center p-3 border rounded h-100">
-                                                                        <i
-                                                                                    class="fas fa-long-arrow-alt-right fa-3x text-primary mb-3"></i>
-                                                                        <h5>Transmission</h5>
-                                                                        <p class="small">Bulk DC power sent to Padghe
-                                                                                    terminal via bipolar transmission
-                                                                                    lines.</p>
+
+
+
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis44.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
                                                             </div>
-                                                </div>
-                                    </div>
-                        </div>
-            </section>
 
-            <!-- Page 5-6: Thyristor Valves Detailed Section -->
-            <!-- <section "style=" background-color: white;"" id="thyristor-valves" class="py-5 bg-dark text-white"> -->
-
-
-
-
-            <section id="thyristor-valves" style="background-color: white;" class="py-5 bg-dark text-white"></section>
-            <div class="container">
-                        <div class="row align-items-4">3. Detailed Thyristor Valve Analysis</h2>
-                                    <p>The "Valve Hall" is the heart of the HVDC system. We observed the
-                                                massive Thyristor quadrivalve structures suspended from the
-                                                ceiling to ensure seismic stability and electrical
-                                                insulation.</p>
-                                    <ul class="list-unstyled">
-                                                <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i>
-                                                            <strong>Valve Composition:</strong> Each valve
-                                                            contains multiple series-connected thyristor
-                                                            levels.
-                                                </li>
-                                                <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i>
-                                                            <strong>Triggering:</strong> Fiber-optic cables
-                                                            are used for light-triggered thyristors (LTT) to
-                                                            ensure isolation from high voltage.
-                                                </li>
-                                                <li class="mb-3"><i class="fas fa-check-circle text-warning me-2"></i>
-                                                            <strong>Cooling:</strong> De-ionized water
-                                                            cooling systems circulate through the heatsinks
-                                                            at the thyristor level.
-                                                </li>
-                                    </ul>
-                        </div>
-                        <div class="col-lg-6">
-                                    <!-- <div class="card bg-secondary text-white border-0"> -->
-
-                                    <!-- <div class="card-body"> -->
-                                    <!-- <p class="card-text small fw-light"> -->
-                                    </p>
-                        </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-
-            <!-- Page 7-8: Component Ratings Table -->
-            <section id="ratings" class="py-5">
-                        <div class="container">
-                                    <h2 class="fw-bold mb-4">4. System Component Ratings (Standard 2026 Data)</h2>
-                                    <div class="table-responsive">
-                                                <table class="table table-striped table-hover border">
-                                                            <thead class="table-primary">
-                                                                        <tr>
-                                                                                    <th>Component Name</th>
-                                                                                    <th>Description</th>
-                                                                                    <th>Operational Rating</th>
-                                                                        </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                        <tr>
-                                                                                    <td>Converter Transformer</td>
-                                                                                    <td>Single-phase, 3-winding units
-                                                                                    </td>
-                                                                                    <td>600 MVA, 400kV / 210kV</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                    <td>Thyristor Valves</td>
-                                                                                    <td>Water-cooled, LTT Type</td>
-                                                                                    <td>±500 kV, 1500 Amps DC</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                    <td>Smoothing Reactor</td>
-                                                                                    <td>Air-core, Dry-type</td>
-                                                                                    <td>250 mH, 1500 Amps</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                    <td>AC Filters</td>
-                                                                                    <td>High-pass & Double-tuned</td>
-                                                                                    <td>12th, 24th, 36th Harmonics</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                    <td>DC Filters</td>
-                                                                                    <td>Harmonic suppression</td>
-                                                                                    <td>±500 kV DC, PLC Filters</td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                                    <td>Cooling System</td>
-                                                                                    <td>Closed-loop water cooling</td>
-                                                                                    <td>Conductivity &lt; 0.5 µS/cm</td>
-                                                                        </tr>
-                                                            </tbody>
-                                                </table>
-                                    </div>
-                        </div>
-            </section>
-
-            <!-- Page 9: Student Observations -->
-            <section class="py-5 bg-light">
-                        <div class="container">
-                                    <h2 class="fw-bold mb-4">5. On-Site Observations & Methodology</h2>
-                                    <div class="row">
-                                                <div class="col-md-6 mb-4">
-                                                            <div class="p-4 bg-white shadow-sm rounded">
-                                                                        <h5>Control Room Procedures</h5>
-                                                                        <p>The students witnessed the SCADA-based
-                                                                                    control of active and reactive
-                                                                                    power. The interface shows real-time
-                                                                                    temperature of thyristor valves and
-                                                                                    the status of DC circuit breakers.
-                                                                        </p>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis555.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
                                                             </div>
-                                                </div>
-                                                <div class="col-md-6 mb-4">
-                                                            <div class="p-4 bg-white shadow-sm rounded">
-                                                                        <h5>Maintenance Protocol</h5>
-                                                                        <p>Inspection of the surge arresters and the
-                                                                                    grounding electrodes. Discussion on
-                                                                                    the importance of the metallic
-                                                                                    return and earth return modes during
-                                                                                    maintenance of one pole.</p>
+
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="visi66tf.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
                                                             </div>
-                                                </div>
-                                    </div>
-                        </div>
-            </section>
-
-            <!-- Gallery Section -->
-            <section class="py-5">
-                        <div class="container">
-                                    <h2 class="fw-bold mb-4">Visit Documentation Gallery</h2>
-                                    <div class="row g-3">
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis222.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-
-
-
-
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis11.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis33.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-
-
-
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis44.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis555.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-
-                                                <div class="col-md-4 col-6">
-                                                            <img src="visi66tf.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="visit77.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="visi88.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis99.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis 10.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="trasfo.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis12.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis13.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis1414.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                            <img src="vis 1616.png"
-                                                                        alt="Group of students at CTPS Entrance"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="visit77.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="visi88.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis99.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis 10.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="trasfo.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis12.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis13.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis1414.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
+                                                            <div class="col-md-4 col-6">
+                                                                        <img src="vis 1616.png"
+                                                                                    alt="Group of students at CTPS Entrance"
+                                                                                    class="img-fluid rounded shadow-sm">
+                                                            </div>
 
 
 
 
 
 
-                                                <!-- <div class="col-md-4 col-6">
+                                                            <!-- <div class="col-md-4 col-6">
                                                             <img src="vis11.png" alt="Main Transformer Yard" vis555.png
                                                                         class="img-fluid rounded shadow-sm">
                                                 </div>
@@ -509,127 +624,144 @@
                                                             <img src="vis33.png" alt="HVDC Control Room"
                                                                         class="img-fluid rounded shadow-sm">
                                                 </div> -->
-                                    </div>
-                        </div>
-            </section>
-
-            <!-- Conclusion Section -->
-            <section id="conclusion" class="py-5 bg-primary text-white">
-                        <div class="container">
-                                    <div class="row justify-content-center text-center">
-                                                <div class="col-lg-8">
-                                                            <h2 class="fw-bold mb-4">6. Conclusion</h2>
-                                                            <p class="lead">This industrial visit provided invaluable
-                                                                        practical knowledge regarding HVDC transmission,
-                                                                        which is difficult to replicate in a classroom
-                                                                        environment. Understanding the scale of the
-                                                                        500kV terminal and the complexity of thyristor
-                                                                        valve triggering has enhanced our understanding
-                                                                        of Power Electronics and Power Systems.</p>
-                                                            <p>The Department of Electrical Engineering at Priyadarshini
-                                                                        College of Engineering, Nagpur, extends its
-                                                                        gratitude to the CTPS management for this
-                                                                        educational opportunity.</p>
                                                 </div>
                                     </div>
-                        </div>
-            </section>
+                        </section>
 
-            <!-- Download / Footer Actions -->
-            <section id="download" class="py-5 border-top">
-                        <div class="container text-center">
-                                    <h4 class="mb-4">Generate Detailed 10-Page Report PDF</h4>
-                                    <div class="d-flex justify-content-center gap-3">
-                                                <button class="btn btn-dark btn-lg">
-                                                            <i class="fas fa-file-pdf me-2"></i> Full Report (v2026)
-                                                </button>
-                                                <button class="btn btn-outline-primary btn-lg">
-                                                            <i class="fas fa-print me-2"></i> Print Document
-                                                </button>
+                        <!-- Conclusion Section -->
+                        <section id="conclusion" class="py-5 bg-primary text-white">
+                                    <div class="container">
+                                                <div class="row justify-content-center text-center">
+                                                            <div class="col-lg-8">
+                                                                        <h2 class="fw-bold mb-4">6. Conclusion</h2>
+                                                                        <p class="lead">This industrial visit provided
+                                                                                    invaluable
+                                                                                    practical knowledge regarding HVDC
+                                                                                    transmission,
+                                                                                    which is difficult to replicate in a
+                                                                                    classroom
+                                                                                    environment. Understanding the scale
+                                                                                    of the
+                                                                                    500kV terminal and the complexity of
+                                                                                    thyristor
+                                                                                    valve triggering has enhanced our
+                                                                                    understanding
+                                                                                    of Power Electronics and Power
+                                                                                    Systems.</p>
+                                                                        <p>The Department of Electrical Engineering at
+                                                                                    Priyadarshini
+                                                                                    College of Engineering, Nagpur,
+                                                                                    extends its
+                                                                                    gratitude to the CTPS management for
+                                                                                    this
+                                                                                    educational opportunity.</p>
+                                                            </div>
+                                                </div>
                                     </div>
-                        </div>
-            </section>
-</main>
+                        </section>
 
-<section id="contact">
-            <div class="container">
-                        <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What's next!</span>
-                        </h6>
-                        <h2 class="section-heading text-center">Contact</h2>
-                        <p class="text-center muted-text mt-3 mb-4">Interested in working together? We should schedule a
-                                    time to chat. I'll bring the coffee.</p>
-                        <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="500">
-                                    <div class="col-lg-8">
-                                                <div class="contact-form">
-                                                            <form action="https://formspree.io/f/xkgzwjra"
-                                                                        method="POST">
-                                                                        <div class="row g-2">
-                                                                                    <div class="col-md-6">
-                                                                                                <div class="form-group">
-                                                                                                            <input type="text"
-                                                                                                                        class="form-control"
-                                                                                                                        id="name"
-                                                                                                                        name="name"
-                                                                                                                        placeholder="Name *"
-                                                                                                                        required>
+                        <!-- Download / Footer Actions -->
+                        <section id="download" class="py-5 border-top">
+                                    <div class="container text-center">
+                                                <h4 class="mb-4">Generate Detailed 10-Page Report PDF</h4>
+                                                <div class="d-flex justify-content-center gap-3">
+                                                            <button class="btn btn-dark btn-lg">
+                                                                        <i class="fas fa-file-pdf me-2"></i> Full Report
+                                                                        (v2026)
+                                                            </button>
+                                                            <button class="btn btn-outline-primary btn-lg">
+                                                                        <i class="fas fa-print me-2"></i> Print Document
+                                                            </button>
+                                                </div>
+                                    </div>
+                        </section>
+            </main>
+
+            <section id="contact">
+                        <div class="container">
+                                    <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What's
+                                                            next!</span>
+                                    </h6>
+                                    <h2 class="section-heading text-center">Contact</h2>
+                                    <p class="text-center muted-text mt-3 mb-4">Interested in working together? We
+                                                should schedule a
+                                                time to chat. I'll bring the coffee.</p>
+                                    <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="500">
+                                                <div class="col-lg-8">
+                                                            <div class="contact-form">
+                                                                        <form action="https://formspree.io/f/xkgzwjra"
+                                                                                    method="POST">
+                                                                                    <div class="row g-2">
+                                                                                                <div class="col-md-6">
+                                                                                                            <div
+                                                                                                                        class="form-group">
+                                                                                                                        <input type="text"
+                                                                                                                                    class="form-control"
+                                                                                                                                    id="name"
+                                                                                                                                    name="name"
+                                                                                                                                    placeholder="Name *"
+                                                                                                                                    required>
+                                                                                                            </div>
                                                                                                 </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-6">
-                                                                                                <div class="form-group">
-                                                                                                            <input type="email"
-                                                                                                                        class="form-control"
-                                                                                                                        id="email"
-                                                                                                                        name="email"
-                                                                                                                        placeholder="Email *"
-                                                                                                                        required>
+                                                                                                <div class="col-md-6">
+                                                                                                            <div
+                                                                                                                        class="form-group">
+                                                                                                                        <input type="email"
+                                                                                                                                    class="form-control"
+                                                                                                                                    id="email"
+                                                                                                                                    name="email"
+                                                                                                                                    placeholder="Email *"
+                                                                                                                                    required>
+                                                                                                            </div>
                                                                                                 </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-12">
-                                                                                                <div class="form-group">
-                                                                                                            <input type="text"
-                                                                                                                        class="form-control"
-                                                                                                                        id="subject"
-                                                                                                                        name="subject"
-                                                                                                                        placeholder="Subject *"
-                                                                                                                        required>
+                                                                                                <div class="col-md-12">
+                                                                                                            <div
+                                                                                                                        class="form-group">
+                                                                                                                        <input type="text"
+                                                                                                                                    class="form-control"
+                                                                                                                                    id="subject"
+                                                                                                                                    name="subject"
+                                                                                                                                    placeholder="Subject *"
+                                                                                                                                    required>
+                                                                                                            </div>
                                                                                                 </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-12">
-                                                                                                <div class="form-group">
-                                                                                                            <textarea style="resize: none;"
-                                                                                                                        class="form-control"
-                                                                                                                        id="message"
-                                                                                                                        name="message"
-                                                                                                                        rows="5"
-                                                                                                                        placeholder="Your message *"
-                                                                                                                        required></textarea>
+                                                                                                <div class="col-md-12">
+                                                                                                            <div
+                                                                                                                        class="form-group">
+                                                                                                                        <textarea style="resize: none;"
+                                                                                                                                    class="form-control"
+                                                                                                                                    id="message"
+                                                                                                                                    name="message"
+                                                                                                                                    rows="5"
+                                                                                                                                    placeholder="Your message *"
+                                                                                                                                    required></textarea>
+                                                                                                            </div>
                                                                                                 </div>
-                                                                                    </div>
-                                                                                    <div class="col-md-12">
-                                                                                                <button type="submit"
-                                                                                                            style="background-color: rgb(9, 116, 158); color: white; border: none; padding: 10px 20px;">
-                                                                                                            Submit
-                                                                                                </button>
+                                                                                                <div class="col-md-12">
+                                                                                                            <button type="submit"
+                                                                                                                        style="background-color: rgb(9, 116, 158); color: white; border: none; padding: 10px 20px;">
+                                                                                                                        Submit
+                                                                                                            </button>
 
 
 
 
 
-                                                                                                <!-- <button type="submit" -->
-                                                                                                <!-- class="btn
+                                                                                                            <!-- <button type="submit" -->
+                                                                                                            <!-- class="btn
                                                                                                 primary-bg-btn
                                                                                                 mt-2">Send
                                                                                                 Message  -->
-                                                                                                <i
-                                                                                                            class="bi bi-arrow-up-right"></i></button>
+                                                                                                            <i
+                                                                                                                        class="bi bi-arrow-up-right"></i></button>
+                                                                                                </div>
                                                                                     </div>
-                                                                        </div>
-                                                            </form>
+                                                                        </form>
+                                                            </div>
                                                 </div>
                                     </div>
                         </div>
-            </div>
-</section>
+            </section>
 
 
 
@@ -649,29 +781,34 @@
 
 
 
-<footer class="bg-dark text-white py-4 mt-5">
-            <div class="container">
-                        <div class="row">
-                                    <div class="col-md-6 text-center text-md-start">
-                                                <p class="mb-0">&copy; 2026 Priyadarshini College of Engineering,
-                                                            Nagpur. Dept. of Electrical Engineering.</p>
-                                                <small class="text-muted">Developed as part of the Industrial Exposure
-                                                            Curriculum.</small>
-                                    </div>
-                                    <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
-                                                <a href="https://in.linkedin.com/company/priyadarshini-college-of-engineering-nagpur2"
-                                                            class="text-white me-3 text-decoration-none"><i
-                                                                        class="fab fa-linkedin fs-5"></i></a>
-                                                <a href="https://www.facebook.com/PCENagpurOfficial/"
-                                                            class="text-white me-3 text-decoration-none"><i
-                                                                        class="fab fa-facebook fs-5"></i></a>
-                                                <a href="https://pcenagpur.edu.in/"
-                                                            class="text-white text-decoration-none"><i
-                                                                        class="fas fa-globe fs-5"></i></a>
+            <footer class="bg-dark text-white py-4 mt-5">
+                        <div class="container">
+                                    <div class="row">
+                                                <div class="col-md-6 text-center text-md-start">
+                                                            <p class="mb-0">&copy; 2026 Priyadarshini College of
+                                                                        Engineering,
+                                                                        Nagpur. Dept. of Electrical Engineering.</p>
+                                                            <small class="text-muted">Developed as part of the
+                                                                        Industrial Exposure
+                                                                        Curriculum.</small>
+                                                </div>
+                                                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                                                            <a href="https://in.linkedin.com/company/priyadarshini-college-of-engineering-nagpur2"
+                                                                        class="text-white me-3 text-decoration-none"><i
+                                                                                    class="fab fa-linkedin fs-5"></i></a>
+                                                            <a href="https://www.facebook.com/PCENagpurOfficial/"
+                                                                        class="text-white me-3 text-decoration-none"><i
+                                                                                    class="fab fa-facebook fs-5"></i></a>
+                                                            <a href="https://pcenagpur.edu.in/"
+                                                                        class="text-white text-decoration-none"><i
+                                                                                    class="fas fa-globe fs-5"></i></a>
+                                                </div>
                                     </div>
                         </div>
-            </div>
-</footer>
+            </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
